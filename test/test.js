@@ -46,5 +46,15 @@ QUnit.module('main.js tests', function() {
         //Assert
         assert.equal(result, expected, 'add(2, -3) should return -1');
     });
-
+    // Additional Test
+    QUnit.test('add should return the correct sum when one input is zero', function(assert) {
+        //Arrange
+        const num1 = 0;
+        const num2 = 5;
+        const expected = 5;
+        //Act
+        const result = add(num1, num2);
+        //Assert
+        assert.equal(result, expected, 'add(0, 5) should return 5');
+    });
 });

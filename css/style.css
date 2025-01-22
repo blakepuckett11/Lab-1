@@ -2,3 +2,36 @@ h1{
   border-color: #d3e644;
   border-style: dashed;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+head {
+  background-color: #4682b4;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: square;
+  line-height: 1.8;
+}
+
+img {
+  display: flex;
+  margin: 0 auto;
+  border: 5px solid #4682b4;
+}
+
+li {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4682b4;
+  color: white;
+}

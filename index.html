@@ -13,7 +13,7 @@
 <body>
   <h1>HTML Rocks!</h1>
   <p>
-    <button  onclick="helloWorld()">Prints Hello World to the Developer console</button>
+    <button onclick="helloWorld()">Prints Hello World to the Developer console</button>
   </p>
   <hr>
   <form id="addForm">
@@ -33,6 +33,16 @@
   <button id="jokeButton">Get a Random Joke</button>
   <p id="joke"></p>
 
+  <hr>
+  <h2>About Page</h2>
+  <ul>
+    <li>Name: Blake Puckett</li>
+    <li>Graduation Date: Expected 2025</li>
+    <li>Currently working in web development: No</li>
+    <li>Previous web development experience: Internship experience with CSS and PHP</li>
+  </ul>
+  <img src="img/profile.JPG" alt="Profile Picture" style="width:150px; height:auto; border-radius:50%;">
+
   <script type="module" script="js/main.js">
     import {helloWorld, add, fetchRandomJoke} from './js/main.js';
 
@@ -47,14 +57,13 @@
       e.preventDefault();
       const num1 = parseFloat(document.getElementById('num1').value);
       const num2 = parseFloat(document.getElementById('num2').value);
-      try{
+      try {
         const result = add(num1, num2);
         document.getElementById('result').textContent = `Result: ${result}`;
-      }catch(e){
+      } catch (e) {
         console.error(e);
         document.getElementById('result').textContent = `Error: ${e.message}`;
       }
-
     });
 
     // this shows how to add an event listener to a button in the HTML
